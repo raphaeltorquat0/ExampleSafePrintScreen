@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2C5C0D2A0AF52F00EFCA76 /* SafePrintScreenSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8A8C172A0AF4FA00EDE4BB /* SafePrintScreenSwift.framework */; };
+		3F2C5C0E2A0AF52F00EFCA76 /* SafePrintScreenSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8A8C172A0AF4FA00EDE4BB /* SafePrintScreenSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3F8A8BF22A0AF4D300EDE4BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A8BF12A0AF4D300EDE4BB /* AppDelegate.swift */; };
 		3F8A8BF42A0AF4D300EDE4BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A8BF32A0AF4D300EDE4BB /* SceneDelegate.swift */; };
 		3F8A8BF62A0AF4D300EDE4BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A8BF52A0AF4D300EDE4BB /* ViewController.swift */; };
@@ -14,6 +16,37 @@
 		3F8A8BFB2A0AF4D600EDE4BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F8A8BFA2A0AF4D600EDE4BB /* Assets.xcassets */; };
 		3F8A8BFE2A0AF4D600EDE4BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8A8BFC2A0AF4D600EDE4BB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F8A8C162A0AF4FA00EDE4BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F8A8C072A0AF4FA00EDE4BB /* SafePrintScreenSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F8A8BC12A0AE91700EDE4BB;
+			remoteInfo = SafePrintScreenSwift;
+		};
+		3F8A8C182A0AF4FA00EDE4BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F8A8C072A0AF4FA00EDE4BB /* SafePrintScreenSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F8A8BCB2A0AE91700EDE4BB;
+			remoteInfo = SafePrintScreenSwiftTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F2C5C0F2A0AF52F00EFCA76 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3F2C5C0E2A0AF52F00EFCA76 /* SafePrintScreenSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3F8A8BEE2A0AF4D300EDE4BB /* ExampleSafePrintScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleSafePrintScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +57,13 @@
 		3F8A8BFA2A0AF4D600EDE4BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F8A8BFD2A0AF4D600EDE4BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F8A8BFF2A0AF4D600EDE4BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F8A8C072A0AF4FA00EDE4BB /* SafePrintScreenSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SafePrintScreenSwift.xcodeproj; sourceTree = "<group>"; };
+		3F8A8C0B2A0AF4FA00EDE4BB /* SafePrintScreenSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafePrintScreenSwiftTests.swift; sourceTree = "<group>"; };
+		3F8A8C0E2A0AF4FA00EDE4BB /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		3F8A8C0F2A0AF4FA00EDE4BB /* SafePrintScreenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafePrintScreenManager.swift; sourceTree = "<group>"; };
+		3F8A8C102A0AF4FA00EDE4BB /* SafePrintScreenSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafePrintScreenSwift.h; sourceTree = "<group>"; };
+		3F8A8C122A0AF4FA00EDE4BB /* SafePrintScreenDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafePrintScreenDelegate.swift; sourceTree = "<group>"; };
+		3F8A8C132A0AF4FA00EDE4BB /* SafePrintScreenSwift.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SafePrintScreenSwift.docc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F2C5C0D2A0AF52F00EFCA76 /* SafePrintScreenSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +83,7 @@
 			children = (
 				3F8A8BF02A0AF4D300EDE4BB /* ExampleSafePrintScreen */,
 				3F8A8BEF2A0AF4D300EDE4BB /* Products */,
+				3F8A8C052A0AF4FA00EDE4BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +109,70 @@
 			path = ExampleSafePrintScreen;
 			sourceTree = "<group>";
 		};
+		3F8A8C052A0AF4FA00EDE4BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F8A8C062A0AF4FA00EDE4BB /* SafePrintScreenSwift */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F8A8C062A0AF4FA00EDE4BB /* SafePrintScreenSwift */ = {
+			isa = PBXGroup;
+			children = (
+				3F8A8C072A0AF4FA00EDE4BB /* SafePrintScreenSwift.xcodeproj */,
+				3F8A8C0A2A0AF4FA00EDE4BB /* SafePrintScreenSwiftTests */,
+				3F8A8C0C2A0AF4FA00EDE4BB /* SafePrintScreenSwift */,
+			);
+			name = SafePrintScreenSwift;
+			path = ../SafePrintScreenSwift;
+			sourceTree = "<group>";
+		};
+		3F8A8C082A0AF4FA00EDE4BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F8A8C172A0AF4FA00EDE4BB /* SafePrintScreenSwift.framework */,
+				3F8A8C192A0AF4FA00EDE4BB /* SafePrintScreenSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F8A8C0A2A0AF4FA00EDE4BB /* SafePrintScreenSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F8A8C0B2A0AF4FA00EDE4BB /* SafePrintScreenSwiftTests.swift */,
+			);
+			path = SafePrintScreenSwiftTests;
+			sourceTree = "<group>";
+		};
+		3F8A8C0C2A0AF4FA00EDE4BB /* SafePrintScreenSwift */ = {
+			isa = PBXGroup;
+			children = (
+				3F8A8C0D2A0AF4FA00EDE4BB /* supports */,
+				3F8A8C0F2A0AF4FA00EDE4BB /* SafePrintScreenManager.swift */,
+				3F8A8C102A0AF4FA00EDE4BB /* SafePrintScreenSwift.h */,
+				3F8A8C112A0AF4FA00EDE4BB /* protocol */,
+				3F8A8C132A0AF4FA00EDE4BB /* SafePrintScreenSwift.docc */,
+			);
+			path = SafePrintScreenSwift;
+			sourceTree = "<group>";
+		};
+		3F8A8C0D2A0AF4FA00EDE4BB /* supports */ = {
+			isa = PBXGroup;
+			children = (
+				3F8A8C0E2A0AF4FA00EDE4BB /* UIView+Extension.swift */,
+			);
+			path = supports;
+			sourceTree = "<group>";
+		};
+		3F8A8C112A0AF4FA00EDE4BB /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				3F8A8C122A0AF4FA00EDE4BB /* SafePrintScreenDelegate.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +183,7 @@
 				3F8A8BEA2A0AF4D300EDE4BB /* Sources */,
 				3F8A8BEB2A0AF4D300EDE4BB /* Frameworks */,
 				3F8A8BEC2A0AF4D300EDE4BB /* Resources */,
+				3F2C5C0F2A0AF52F00EFCA76 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,12 +220,35 @@
 			mainGroup = 3F8A8BE52A0AF4D300EDE4BB;
 			productRefGroup = 3F8A8BEF2A0AF4D300EDE4BB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3F8A8C082A0AF4FA00EDE4BB /* Products */;
+					ProjectRef = 3F8A8C072A0AF4FA00EDE4BB /* SafePrintScreenSwift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3F8A8BED2A0AF4D300EDE4BB /* ExampleSafePrintScreen */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3F8A8C172A0AF4FA00EDE4BB /* SafePrintScreenSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SafePrintScreenSwift.framework;
+			remoteRef = 3F8A8C162A0AF4FA00EDE4BB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3F8A8C192A0AF4FA00EDE4BB /* SafePrintScreenSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SafePrintScreenSwiftTests.xctest;
+			remoteRef = 3F8A8C182A0AF4FA00EDE4BB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3F8A8BEC2A0AF4D300EDE4BB /* Resources */ = {

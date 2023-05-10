@@ -1,24 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExampleSafePrintScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T39-0T-A3T">
+                                <rect key="frame" x="16" y="222" width="361" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="spThisButtonAction"/>
+                                <connections>
+                                    <action selector="spThisButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MAN-rD-IXP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3f-2G-c0D">
+                                <rect key="frame" x="16" y="681" width="361" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="spCompleteView"/>
+                                <connections>
+                                    <action selector="spCompleteView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TpA-iG-Zes"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kT-Kk-z7F">
+                                <rect key="frame" x="16" y="408.66666666666669" width="361" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SpCompleteWindow"/>
+                                <connections>
+                                    <action selector="spCompleteWindow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qUF-m8-qtS"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="T39-0T-A3T" firstAttribute="trailing" secondItem="1kT-Kk-z7F" secondAttribute="trailing" id="9il-7o-1UH"/>
+                            <constraint firstItem="T39-0T-A3T" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Dhm-3b-ni3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="e3f-2G-c0D" secondAttribute="bottom" constant="102" id="Fra-Du-Xjx"/>
+                            <constraint firstItem="T39-0T-A3T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="163" id="STq-CV-09a"/>
+                            <constraint firstItem="1kT-Kk-z7F" firstAttribute="trailing" secondItem="e3f-2G-c0D" secondAttribute="trailing" id="ahN-nv-q35"/>
+                            <constraint firstItem="T39-0T-A3T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lQt-W9-QOd"/>
+                            <constraint firstItem="1kT-Kk-z7F" firstAttribute="leading" secondItem="e3f-2G-c0D" secondAttribute="leading" id="nDy-0h-2zK"/>
+                            <constraint firstItem="T39-0T-A3T" firstAttribute="leading" secondItem="1kT-Kk-z7F" secondAttribute="leading" id="ytd-Ms-eal"/>
+                            <constraint firstItem="1kT-Kk-z7F" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="za5-YO-Yv5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.824427480916029" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
